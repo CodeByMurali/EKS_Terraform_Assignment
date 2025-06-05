@@ -39,7 +39,7 @@ jobs:
 
   CheckOut-Repo:
     runs-on: ubuntu-latest
-    environment: production
+    # environment: production
 
     defaults:
       run:
