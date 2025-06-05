@@ -8,7 +8,7 @@ resource "aws_eks_cluster" "eks" {
 
   vpc_config {
 
-    # By specifying these ptivate subnet IDs, the EKS cluster control plane resources will be deployed within these private subnets
+    # The EKS resources will be deployed within these private subnets
     subnet_ids = [
       aws_subnet.private-subnet[0].id,
       aws_subnet.private-subnet[1].id,

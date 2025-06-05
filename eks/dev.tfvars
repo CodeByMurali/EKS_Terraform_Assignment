@@ -19,7 +19,7 @@ eks-sg                = "sg"
 
 # EKS
 is-eks-cluster-enabled     = true
-cluster-version            = "1.30"
+cluster-version            = "1.33"
 cluster-name               = "eks"
 endpoint-private-access    = true
 endpoint-public-access     = false
