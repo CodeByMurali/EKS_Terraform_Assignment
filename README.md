@@ -82,6 +82,32 @@ terraform {
 ```
 
 -----
+📁 Terraform Project Structure
+Our Terraform project is organized into a modular and reusable structure, allowing for clean separation of concerns and easy management of different environments (e.g., dev, prod).
+
+.
+├── .github/workflows/
+│   └── terraform-EKS-Hiive.yml  # GitHub Actions workflow for CI/CD
+├── eks/                         # Main EKS provisioning directory
+│   ├── amin.tf                  # Main configuration for EKS cluster
+│   ├── backend.tf               # S3 backend configuration
+│   ├── dev.tfvars               # Variable values for the 'dev' environment
+│   └── variables.tf             # Input variables for the EKS module
+├── eks-jump/                    # Terraform for provisioning the EKS Jump Host
+│   └── ...                      # Related .tf files for jump host
+└── module/                      # Reusable Terraform Modules
+    └── eks-module/              # Generic EKS cluster & networking module
+        ├── main.tf              # Module's main logic
+        ├── variables.tf         # Module's input variables
+        └── outputs.tf           # Module's output values
+Modularity and Reusability
+This structure heavily emphasizes modularity and reusability:
+
+module/ Directory: This directory houses our core, reusable Terraform modules. For instance, the eks-module encapsulates the logic for provisioning an EKS cluster, its networking, and associated IAM roles. This means the complex setup for EKS is defined once and can be referenced across different environments or projects.
+eks/ and eks-jump/ Directories: These top-level directories use the modules defined in module/. This allows us to define specific infrastructure instances (like the EKS cluster itself and the jump host) by simply calling the respective modules and passing in their configurations.
+.tfvars Files: Files like dev.tfvars provide environment-specific variable values. This is crucial for reusability, as the same Terraform code (defined in the eks/ directory, which calls the module/eks-module) can be deployed to different environments (e.g., dev, prod) by simply swapping the .tfvars file. This prevents code duplication and ensures consistency while allowing for necessary variations between environments (e.g., instance types, desired capacities).
+
+---
 
 ## 🌐 AWS Networking Layer
 
