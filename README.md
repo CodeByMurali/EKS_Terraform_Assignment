@@ -28,6 +28,10 @@ This project aims to establish a robust, scalable, and secure infrastructure on 
 
 ## ✨ Architecture Overview
 
+
+![image](https://github.com/user-attachments/assets/44358cb6-5952-450b-8a19-0a61fef67ec3)
+
+
 The architecture provisions a comprehensive AWS environment to host an E-commerce application within an **Amazon Elastic Kubernetes Service (EKS)** cluster. Key components include:
 
   * **Custom AWS Networking**: A dedicated VPC with public and private subnets, Internet Gateway, NAT Gateway, and tailored route tables.
