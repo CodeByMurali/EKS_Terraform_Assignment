@@ -89,15 +89,26 @@ Our Terraform project is organized into a modular and reusable structure, allowi
 ├── .github/workflows/
 │   └── terraform-EKS-Hiive.yml  # GitHub Actions workflow for CI/CD
 ├── eks/                         # Main EKS provisioning directory
-│   ├── amin.tf                  # Main configuration for EKS cluster
+│   ├── main.tf                  # Main configuration for EKS cluster
 │   ├── backend.tf               # S3 backend configuration
 │   ├── dev.tfvars               # Variable values for the 'dev' environment
 │   └── variables.tf             # Input variables for the EKS module
 ├── eks-jump/                    # Terraform for provisioning the EKS Jump Host
-│   └── ...                      # Related .tf files for jump host
+│   ├── backend.tf               # S3 backend configuration for jump host
+│   ├── bastion-host.tf          # Defines the bastion host EC2 instance
+│   ├── data_sources_jump.tf     # Data sources specific to the jump host
+│   ├── dev.tfvars               # Variable values for the jump host (e.g., instance type)
+│   ├── jump-tools-install.sh    # Script for installing tools on the jump host
+│   ├── output.tf                # Outputs from the jump host module
+│   ├── provider.tf              # AWS provider configuration for jump host
+│   └── variables.tf             # Input variables for the jump host module
 └── module/                      # Reusable Terraform Modules
     └── eks-module/              # Generic EKS cluster & networking module
-        ├── main.tf              # Module's main logic
+        ├── data_sources.tf      # Defines various data sources used by the module
+        ├── eks.tf               # EKS cluster and node group definitions
+        ├── iam.tf               # IAM roles and policies for EKS
+        ├── vpc.tf               # VPC and networking components
+        ├── main.tf              # Module's main logic (orchestrates other .tf files)
         ├── variables.tf         # Module's input variables
         └── outputs.tf           # Module's output values
 
