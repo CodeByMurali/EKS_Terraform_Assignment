@@ -9,10 +9,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "use1-remote-terraform-state-file-bucket-murali"
-    key            = "eks/terraform.tfstate"
+    bucket         = "use1-remote-terraform-state-file-jump-bucket-murali"
+    key            = "eks-jump/terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
-    dynamodb_table = "terraform-locks"
+    dynamodb_table = "terraform-jump-locks"
   }
 }
