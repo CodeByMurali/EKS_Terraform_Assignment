@@ -266,7 +266,6 @@ pod/mysql-8c599b989-xk9jc       1/1     Running   0          42m
 pod/payment-6589fd67f6-zld2f    1/1     Running   0          42m
 pod/rabbitmq-876447689-5xrhp    1/1     Running   0          42m
 pod/ratings-6fb5c59f44-2lvcg    1/1     Running   0          42m
-pod/redis-0                     0/1     Pending   0          42m
 pod/shipping-67cdd8c8c6-lmhjr   1/1     Running   0          42m
 pod/user-b4977f556-8hls4        1/1     Running   0          42m
 pod/web-7649bf4886-td5bq        1/1     Running   0          42m
