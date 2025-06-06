@@ -253,6 +253,65 @@ Destroy complete! Resources: 38 destroyed.
 ![image](https://github.com/user-attachments/assets/2865ede6-5599-4d81-b037-48b15b5e2db8)
 
 
+**kubernetes cluster reources**
+
+```
+ubuntu@ip-10-16-18-223:~/three-tier-architecture-demo/EKS/helm$ kubectl get all -n robot-shop
+NAME                            READY   STATUS    RESTARTS   AGE
+pod/cart-655b74fb49-qmlgj       1/1     Running   0          42m
+pod/catalogue-b4855db44-z9m8j   1/1     Running   0          42m
+pod/dispatch-845799dc84-7h2sm   1/1     Running   0          42m
+pod/mongodb-69d9cf5747-c7dv5    1/1     Running   0          42m
+pod/mysql-8c599b989-xk9jc       1/1     Running   0          42m
+pod/payment-6589fd67f6-zld2f    1/1     Running   0          42m
+pod/rabbitmq-876447689-5xrhp    1/1     Running   0          42m
+pod/ratings-6fb5c59f44-2lvcg    1/1     Running   0          42m
+pod/redis-0                     0/1     Pending   0          42m
+pod/shipping-67cdd8c8c6-lmhjr   1/1     Running   0          42m
+pod/user-b4977f556-8hls4        1/1     Running   0          42m
+pod/web-7649bf4886-td5bq        1/1     Running   0          42m
+
+NAME                TYPE           CLUSTER-IP       EXTERNAL-IP                                                              PORT(S)                       AGE
+service/cart        ClusterIP      172.20.50.86     <none>                                                                   8080/TCP                      42m
+service/catalogue   ClusterIP      172.20.255.206   <none>                                                                   8080/TCP                      42m
+service/dispatch    ClusterIP      None             <none>                                                                   55555/TCP                     42m
+service/mongodb     ClusterIP      172.20.29.103    <none>                                                                   27017/TCP                     42m
+service/mysql       ClusterIP      172.20.246.56    <none>                                                                   3306/TCP                      42m
+service/payment     ClusterIP      172.20.232.179   <none>                                                                   8080/TCP                      42m
+service/rabbitmq    ClusterIP      172.20.110.119   <none>                                                                   5672/TCP,15672/TCP,4369/TCP   42m
+service/ratings     ClusterIP      172.20.107.41    <none>                                                                   80/TCP                        42m
+service/redis       ClusterIP      172.20.86.222    <none>                                                                   6379/TCP                      42m
+service/shipping    ClusterIP      172.20.124.228   <none>                                                                   8080/TCP                      42m
+service/user        ClusterIP      172.20.253.93    <none>                                                                   8080/TCP                      42m
+service/web         LoadBalancer   172.20.240.230   a2488b467d92846ea91f9fb95c24c315-176850280.us-east-1.elb.amazonaws.com   8080:31678/TCP                42m
+
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/cart        1/1     1            1           42m
+deployment.apps/catalogue   1/1     1            1           42m
+deployment.apps/dispatch    1/1     1            1           42m
+deployment.apps/mongodb     1/1     1            1           42m
+deployment.apps/mysql       1/1     1            1           42m
+deployment.apps/payment     1/1     1            1           42m
+deployment.apps/rabbitmq    1/1     1            1           42m
+deployment.apps/ratings     1/1     1            1           42m
+deployment.apps/shipping    1/1     1            1           42m
+deployment.apps/user        1/1     1            1           42m
+deployment.apps/web         1/1     1            1           42m
+
+NAME                                  DESIRED   CURRENT   READY   AGE
+replicaset.apps/cart-655b74fb49       1         1         1       42m
+replicaset.apps/catalogue-b4855db44   1         1         1       42m
+replicaset.apps/dispatch-845799dc84   1         1         1       42m
+replicaset.apps/mongodb-69d9cf5747    1         1         1       42m
+replicaset.apps/mysql-8c599b989       1         1         1       42m
+replicaset.apps/payment-6589fd67f6    1         1         1       42m
+replicaset.apps/rabbitmq-876447689    1         1         1       42m
+replicaset.apps/ratings-6fb5c59f44    1         1         1       42m
+replicaset.apps/shipping-67cdd8c8c6   1         1         1       42m
+replicaset.apps/user-b4977f556        1         1         1       42m
+replicaset.apps/web-7649bf4886        1         1         1       42m
+```
+
 
 For detailed AWS service-level screenshots and further insights into the deployed resources, please refer to the following Notion page:
 
