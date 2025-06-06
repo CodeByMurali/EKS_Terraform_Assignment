@@ -116,11 +116,7 @@ Our Terraform project is organized into a modular and reusable structure, allowi
 ```
 
 **Modularity and Reusability**
-This structure heavily emphasizes modularity and reusability:
-
-module/ Directory: This directory houses our core, reusable Terraform modules. For instance, the eks-module encapsulates the logic for provisioning an EKS cluster, its networking, and associated IAM roles. This means the complex setup for EKS is defined once and can be referenced across different environments or projects.
-eks/ and eks-jump/ Directories: These top-level directories use the modules defined in module/. This allows us to define specific infrastructure instances (like the EKS cluster itself and the jump host) by simply calling the respective modules and passing in their configurations.
-.tfvars Files: Files like dev.tfvars provide environment-specific variable values. T
+This structure heavily emphasizes modularity and reusability
 
 ---
 
