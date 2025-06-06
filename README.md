@@ -8,15 +8,15 @@ Here's a shortened and refined GitHub README for your EKS architecture:
 
 ## Table of Contents
 
-  * [🌟 Project Goal](https://www.google.com/search?q=%23-project-goal)
-  * [✨ Architecture Overview](https://www.google.com/search?q=%23-architecture-overview)
-  * [🚀 Infrastructure Provisioning](https://www.google.com/search?q=%23-infrastructure-provisioning)
-  * [🌐 AWS Networking Layer](https://www.google.com/search?q=%23-aws-networking-layer)
-  * [💻 EKS Cluster Details](https://www.google.com/search?q=%23-eks-cluster-details)
-  * [🔐 Security Best Practices](https://www.google.com/search?q=%23-security-best-practices)
-  * [📦 Application Deployment](https://www.google.com/search?q=%23-application-deployment)
-  * [💡 Further Extensions & Good Practices](https://www.google.com/search?q=%23-further-extensions--good-practices)
-  * [📸 Service-Level Screenshots & Details](https://www.google.com/search?q=%23-service-level-screenshots--details)
+🌟 Project Goal
+✨ Architecture Overview
+🚀 Infrastructure Provisioning
+🌐 AWS Networking Layer
+💻 EKS Cluster Details
+🔐 Security Best Practices
+📦 Application Deployment
+💡 Further Extensions & Good Practices
+📸 Service-Level Screenshots & Details
 
 -----
 
