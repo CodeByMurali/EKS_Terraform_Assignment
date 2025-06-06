@@ -2,7 +2,7 @@ Here's a shortened and refined GitHub README for your EKS architecture:
 
 -----
 
-# 🤖 E-commerce Robot Store on AWS EKS 🚀
+# 🤖 AWS EKS Provisioning with Terraform and Helm 🚀
 
 -----
 
