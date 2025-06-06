@@ -153,7 +153,65 @@ Here are some proposals for further enhancement:
 
 -----
 
-## 📸 Eash AWS Service-Level Screenshots & Details
+## 📸 Detailed Service-Level Screenshots & Details
+
+**Networking layer**
+
+**VPC, Subnet, NAT GW, IGW, Route tables**
+
+![image](https://github.com/user-attachments/assets/1de31c93-1881-44c8-8362-1951e481cb3a)
+
+Load balancer
+
+![image](https://github.com/user-attachments/assets/edb64a9c-b0cf-48fb-b13c-1a6969ad2047)
+
+
+**Compute**
+EKS worker nodes and Jump host
+
+![image](https://github.com/user-attachments/assets/1b34f9fb-9a5f-47aa-afa3-36d119f18ff9)
+
+
+**EKS Cluster**
+
+![image](https://github.com/user-attachments/assets/0e1a89f0-c0f4-4dbf-a090-17cfd1ac2f2b)
+
+
+**Kubernetes resources**
+
+![image](https://github.com/user-attachments/assets/65872f9b-2419-4adf-8090-f58f02589ebd)
+
+
+**Managed EKS node groups**
+
+![image](https://github.com/user-attachments/assets/38153752-b861-4152-9e21-27d9a701c952)
+
+
+**Plugins**
+
+![image](https://github.com/user-attachments/assets/df1051e5-5d9e-4c48-8d8d-d2582d3ca33c)
+
+
+**Terraform apply logs**
+
+```
+Apply complete! Resources: 38 added, 0 changed, 0 destroyed.
+```
+
+**Terraform destroy logs**
+
+```
+module.eks.aws_vpc.vpc: Destroying... [id=vpc-0df79e293b1f2256c]
+module.eks.aws_vpc.vpc: Destruction complete after 1s
+
+Destroy complete! Resources: 38 destroyed.
+```
+
+**Git hub actions - Pls refer the actions section of this repo**
+
+![image](https://github.com/user-attachments/assets/2865ede6-5599-4d81-b037-48b15b5e2db8)
+
+
 
 For detailed AWS service-level screenshots and further insights into the deployed resources, please refer to the following Notion page:
 
