@@ -129,7 +129,7 @@ Security is important for any architecture:
 
 ## 📦 Application Deployment
 
-![image](https://github.com/user-attachments/assets/361ec4dd-f9e3-4ff0-957e-287438d80359)
+![image](https://github.com/user-attachments/assets/7cf3e33b-8c59-4876-99b5-03250867ddd6)
 
 
 The E-commerce Robot Store application is a **3-tier application** deployed to the EKS cluster:
@@ -157,6 +157,6 @@ Here are some proposals for further enhancement:
 
 For detailed AWS service-level screenshots and further insights into the deployed resources, please refer to the following Notion page:
 
-  * [Link to your Notion page here]
+  * [https://www.notion.so/Hiive-Assesement-209c3d778a55804984b3dad8ae91ec08]
 
 -----
