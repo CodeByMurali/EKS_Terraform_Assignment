@@ -16,13 +16,13 @@ Here's a shortened and refined GitHub README for your EKS architecture:
 * 🔐 Security Best Practices
 * 📦 Application Deployment
 * 💡 Further Extensions & Good Practices
-* 📸 Service-Level Screenshots & Details
+* 📸 AWS Service Screenshots & Details
 
 -----
 
 ## 🌟 Project Goal
 
-This project aims to establish a robust, scalable, and secure infrastructure on **AWS** for deploying a 3-tier **E-commerce application** that allows users to purchase robots. Our primary goal is to provision this infrastructure using **Terraform** via **GitHub Actions**, emphasizing **security best practices** and **operational efficiency**.
+This project aims to establish a scalable, and secure infrastructure on **AWS** for deploying a 3-tier **E-commerce application** that allows users to purchase robots. Our primary goal is to provision this infrastructure using **Terraform** via **GitHub Actions**, emphasizing **security best practices** and **operational efficiency**.
 
 -----
 
@@ -176,8 +176,19 @@ Security is important for any architecture:
 The E-commerce Robot Store application is a **3-tier application** deployed to the EKS cluster:
 
   * **Docker Image**: The application's Docker image is built and **pushed to Amazon Elastic Container Registry (ECR)** for secure storage and efficient deployment.
-  * **Helm Deployment**: The application is deployed onto the EKS cluster using **Helm Charts**. Helm provides a robust package management solution for Kubernetes, simplifying the deployment, upgrade, and management of complex applications.
+  * **Helm Deployment**: The application is deployed onto the EKS cluster using **Helm Charts**. Helm provides a package management solution for Kubernetes, simplifying the deployment, upgrade, and management of complex applications.
   * **Access**: The application is exposed to users via a **LoadBalancer NodePort**, ensuring external accessibility.
+
+    ```
+    ubuntu@ip-10-16-18-223:~/three-tier-architecture-demo/EKS/helm$ helm install robot-shop --namespace robot-shop .
+    NAME: robot-shop
+    LAST DEPLOYED: Fri Jun  6 01:58:46 2025
+    NAMESPACE: robot-shop
+    STATUS: deployed
+    REVISION: 1
+    TEST SUITE: None
+    ```
+    
 
 -----
 
@@ -312,7 +323,7 @@ Here are some proposals for further enhancement:
   * **GitOps with Argo CD**: Integrate **Argo CD** for a true GitOps workflow. This enables automatic deployment of code changes (after CI pipeline completion) to the Kubernetes cluster in production.
       * *Check out my other project which demonstrates this setup: [https://github.com/CodeByMurali/CICD-Project-1]*
       * *Also plese checkout my CICD pipeline with best practices usign AWS Codedeploy, Code Pipeline and Sep function: [https://github.com/CodeByMurali/AWS-CICD-StepFunction]* 
-  * **Centralized Logging and Monitoring**: Implement robust logging and monitoring solutions (e.g., Fluent Bit, Prometheus/Grafana) for better observability.
+  * **Centralized Logging and Monitoring**: Implement logging and monitoring solutions (e.g., Fluent Bit, Prometheus/Grafana) for better observability.
   * **Cost Optimization**: Further optimize costs by fine-tuning EKS node group sizing and exploring intelligent autoscaling.
   * **Secrets Management**: Utilize AWS Secrets Manager or HashiCorp Vault for more secure management of application secrets.
 
