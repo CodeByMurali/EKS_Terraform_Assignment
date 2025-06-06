@@ -49,6 +49,7 @@ Our entire infrastructure is provisioned using **Terraform**, ensuring infrastru
 
 ### GitHub Actions Workflow 🤖
 
+
 The infrastructure deployment is fully automated through a **GitHub Actions workflow**. This workflow provides a interface to manage the infrastructure:
 
   * **`terraform plan`**: Allows users to preview infrastructure changes before applying them.
@@ -56,6 +57,12 @@ The infrastructure deployment is fully automated through a **GitHub Actions work
   * **`terraform destroy`**: Safely tears down the entire infrastructure.
 
 Each action includes a **validation step** to ensure code quality and configuration correctness.
+
+![image](https://github.com/user-attachments/assets/e1ec9686-2b93-4e61-b581-ec1ac0caf18e)
+
+![image](https://github.com/user-attachments/assets/9a95ee26-4568-4cfd-b3b4-a45ddab6e9d8)
+
+
 
 ### Terraform Backend Configuration
 
