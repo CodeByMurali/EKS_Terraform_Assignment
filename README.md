@@ -181,19 +181,6 @@ The E-commerce Robot Store application is a **3-tier application** deployed to t
 
 -----
 
-## 💡 Further Extensions & Good Practices
-
-Here are some proposals for further enhancement:
-
-  * **GitOps with Argo CD**: Integrate **Argo CD** for a true GitOps workflow. This enables automatic deployment of code changes (after CI pipeline completion) to the Kubernetes cluster in production.
-      * *Check out my other project which demonstrates this setup: [https://github.com/CodeByMurali/CICD-Project-1]*
-      * *Also plese checkout my CICD pipeline with best practices usign AWS Codedeploy, Code Pipeline and Sep function: [https://github.com/CodeByMurali/AWS-CICD-StepFunction]* 
-  * **Centralized Logging and Monitoring**: Implement robust logging and monitoring solutions (e.g., Fluent Bit, Prometheus/Grafana) for better observability.
-  * **Cost Optimization**: Further optimize costs by fine-tuning EKS node group sizing and exploring intelligent autoscaling.
-  * **Secrets Management**: Utilize AWS Secrets Manager or HashiCorp Vault for more secure management of application secrets.
-
------
-
 ## 📸 Detailed Service-Level Screenshots & Details
 
 **Networking layer**
@@ -315,5 +302,18 @@ replicaset.apps/web-7649bf4886        1         1         1       42m
 For detailed AWS service-level screenshots and further insights into the deployed resources, please refer to the following Notion page:
 
   * [https://www.notion.so/Hiive-Assesement-209c3d778a55804984b3dad8ae91ec08]
+
+-----
+
+## 💡 Further Extensions & Good Practices
+
+Here are some proposals for further enhancement:
+
+  * **GitOps with Argo CD**: Integrate **Argo CD** for a true GitOps workflow. This enables automatic deployment of code changes (after CI pipeline completion) to the Kubernetes cluster in production.
+      * *Check out my other project which demonstrates this setup: [https://github.com/CodeByMurali/CICD-Project-1]*
+      * *Also plese checkout my CICD pipeline with best practices usign AWS Codedeploy, Code Pipeline and Sep function: [https://github.com/CodeByMurali/AWS-CICD-StepFunction]* 
+  * **Centralized Logging and Monitoring**: Implement robust logging and monitoring solutions (e.g., Fluent Bit, Prometheus/Grafana) for better observability.
+  * **Cost Optimization**: Further optimize costs by fine-tuning EKS node group sizing and exploring intelligent autoscaling.
+  * **Secrets Management**: Utilize AWS Secrets Manager or HashiCorp Vault for more secure management of application secrets.
 
 -----
