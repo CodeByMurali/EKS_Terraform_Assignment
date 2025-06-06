@@ -129,6 +129,9 @@ Security is important for any architecture:
 
 ## 📦 Application Deployment
 
+![image](https://github.com/user-attachments/assets/361ec4dd-f9e3-4ff0-957e-287438d80359)
+
+
 The E-commerce Robot Store application is a **3-tier application** deployed to the EKS cluster:
 
   * **Docker Image**: The application's Docker image is built and **pushed to Amazon Elastic Container Registry (ECR)** for secure storage and efficient deployment.
@@ -142,7 +145,8 @@ The E-commerce Robot Store application is a **3-tier application** deployed to t
 Here are some proposals for further enhancement:
 
   * **GitOps with Argo CD**: Integrate **Argo CD** for a true GitOps workflow. This enables automatic deployment of code changes (after CI pipeline completion) to the Kubernetes cluster in production.
-      * *Check out my other project which demonstrates this setup: [Link to your other Argo CD project here]*
+      * *Check out my other project which demonstrates this setup: [https://github.com/CodeByMurali/CICD-Project-1]*
+      * *Also plese checkout my CICD pipeline with best practices usign AWS Codedeploy, Code Pipeline and Sep function: [https://github.com/CodeByMurali/AWS-CICD-StepFunction]* 
   * **Centralized Logging and Monitoring**: Implement robust logging and monitoring solutions (e.g., Fluent Bit, Prometheus/Grafana) for better observability.
   * **Cost Optimization**: Further optimize costs by fine-tuning EKS node group sizing and exploring intelligent autoscaling.
   * **Secrets Management**: Utilize AWS Secrets Manager or HashiCorp Vault for more secure management of application secrets.
