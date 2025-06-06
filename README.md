@@ -29,7 +29,8 @@ This project aims to establish a robust, scalable, and secure infrastructure on 
 ## ✨ Architecture Overview
 
 
-![image](https://github.com/user-attachments/assets/44358cb6-5952-450b-8a19-0a61fef67ec3)
+![image](https://github.com/user-attachments/assets/8813ee02-5c88-4afc-9d3b-2629731e6b64)
+
 
 
 The architecture provisions a AWS EKS environment to host an E-commerce application within an **Amazon Elastic Kubernetes Service (EKS)** cluster. Key components include:
