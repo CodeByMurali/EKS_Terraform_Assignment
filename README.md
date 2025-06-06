@@ -22,7 +22,7 @@ Here's a shortened and refined GitHub README for your EKS architecture:
 
 ## 🌟 Project Goal
 
-This project aims to establish a robust, scalable, and secure infrastructure on **AWS** for deploying a 3-tier **E-commerce application** that allows users to purchase robots. Our primary goal is to provision this infrastructure using **Terraform** and automate the deployment process via **GitHub Actions**, emphasizing **security best practices** and **operational efficiency**.
+This project aims to establish a robust, scalable, and secure infrastructure on **AWS** for deploying a 3-tier **E-commerce application** that allows users to purchase robots. Our primary goal is to provision this infrastructure using **Terraform** via **GitHub Actions**, emphasizing **security best practices** and **operational efficiency**.
 
 -----
 
@@ -32,13 +32,13 @@ This project aims to establish a robust, scalable, and secure infrastructure on 
 ![image](https://github.com/user-attachments/assets/44358cb6-5952-450b-8a19-0a61fef67ec3)
 
 
-The architecture provisions a comprehensive AWS environment to host an E-commerce application within an **Amazon Elastic Kubernetes Service (EKS)** cluster. Key components include:
+The architecture provisions a AWS EKS environment to host an E-commerce application within an **Amazon Elastic Kubernetes Service (EKS)** cluster. Key components include:
 
-  * **Custom AWS Networking**: A dedicated VPC with public and private subnets, Internet Gateway, NAT Gateway, and tailored route tables.
+  * **Custom AWS Networking**: A dedicated VPC with public and private subnets, Internet Gateway, NAT Gateway, and route tables.
   * **EKS Cluster**: A highly available Kubernetes cluster with worker nodes residing in private subnets.
   * **Jump Host**: A bastion instance provisioned in a public subnet to securely access the EKS cluster and private worker nodes.
   * **E-commerce Application**: A 3-tier application deployed to EKS using Helm, exposed via a LoadBalancer NodePort.
-  * **ECR Integration**: Docker images for the application are pushed to Amazon Elastic Container Registry (ECR).
+  * **ECR Integration**: Docker image for the application are pushed to Amazon Elastic Container Registry (ECR).
 
 -----
 
@@ -48,7 +48,7 @@ Our entire infrastructure is provisioned using **Terraform**, ensuring infrastru
 
 ### GitHub Actions Workflow 🤖
 
-The infrastructure deployment is fully automated through a **GitHub Actions workflow**. This workflow provides a user-friendly interface to manage your infrastructure:
+The infrastructure deployment is fully automated through a **GitHub Actions workflow**. This workflow provides a interface to manage the infrastructure:
 
   * **`terraform plan`**: Allows users to preview infrastructure changes before applying them.
   * **`terraform apply`**: Executes the planned changes to provision or update the AWS resources.
@@ -117,7 +117,7 @@ The core of our infrastructure is the Amazon EKS cluster:
 
 ## 🔐 Security Best Practices
 
-Security is paramount in this architecture:
+Security is important for any architecture:
 
   * **Least Privilege Principle**: All IAM roles (EKS cluster role, NodeGroup role, OIDC role) are configured with the **least privilege necessary** to perform their functions.
   * **Private Worker Nodes**: EKS worker nodes are placed in **private subnets**, preventing direct internet exposure.
@@ -139,7 +139,7 @@ The E-commerce Robot Store application is a **3-tier application** deployed to t
 
 ## 💡 Further Extensions & Good Practices
 
-This architecture lays a solid foundation, and here are some proposals for further enhancement:
+Here are some proposals for further enhancement:
 
   * **GitOps with Argo CD**: Integrate **Argo CD** for a true GitOps workflow. This enables automatic deployment of code changes (after CI pipeline completion) to the Kubernetes cluster in production.
       * *Check out my other project which demonstrates this setup: [Link to your other Argo CD project here]*
@@ -149,9 +149,9 @@ This architecture lays a solid foundation, and here are some proposals for furth
 
 -----
 
-## 📸 Service-Level Screenshots & Details
+## 📸 Eash AWS Service-Level Screenshots & Details
 
-For detailed service-level screenshots and further insights into the deployed resources, please refer to the following Notion page:
+For detailed AWS service-level screenshots and further insights into the deployed resources, please refer to the following Notion page:
 
   * [Link to your Notion page here]
 
