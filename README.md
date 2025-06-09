@@ -172,8 +172,9 @@ Security is important for any architecture:
 -----
 
 ## 📦 Application Deployment
+![image](https://github.com/user-attachments/assets/cd80c160-db60-43d6-9115-321b189872fe)
 
-![image](https://github.com/user-attachments/assets/7cf3e33b-8c59-4876-99b5-03250867ddd6)
+
 
 
 The E-commerce Robot Store application is a **3-tier application** deployed to the EKS cluster:
