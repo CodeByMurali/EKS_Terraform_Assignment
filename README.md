@@ -1,7 +1,3 @@
-Here's a shortened and refined GitHub README for your EKS architecture:
-
------
-
 # 🤖 AWS EKS Provisioning with Terraform and Helm 🚀
 
 -----
